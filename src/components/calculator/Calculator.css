@@ -1,0 +1,135 @@
+.calculator-wrapper {
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0 0;
+  grid-template-areas:
+    "input input input input"
+    "clear clear clear division"
+    "seven eight nine multiplication"
+    "four five six subtraction"
+    "one two three addition"
+    "zero zero coma equals";
+  border: 3px solid gray;
+  border-radius: 5px;
+  padding: 1em;
+}
+
+.input {
+  grid-area: input;
+}
+
+.clear {
+  grid-area: clear;
+}
+
+.division {
+  grid-area: division;
+}
+
+.seven {
+  grid-area: seven;
+}
+
+.eight {
+  grid-area: eight;
+}
+
+.nine {
+  grid-area: nine;
+}
+
+.multiplication {
+  grid-area: multiplication;
+}
+
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five;
+}
+
+.six {
+  grid-area: six;
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.subtraction {
+  grid-area: subtraction;
+}
+
+.addition {
+  grid-area: addition;
+}
+
+.zero {
+  grid-area: zero;
+}
+
+.coma {
+  grid-area: coma;
+}
+
+.equals {
+  grid-area: equals;
+}
+
+.calculator-wrapper input {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.calculator-wrapper button {
+  border-radius: 20px;
+  font-size: 1.5rem;
+  margin: 0.325rem;
+  outline: 1px solid transparent;
+  transition: outline 500ms;
+}
+
+.calculator-wrapper button:hover {
+  outline: 1px solid #ffffff;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.background-gray {
+  background-color: #a8a8a8;
+  color: #000000;
+}
+
+.background-darkgray {
+  background-color: #393939;
+  color: #ffffff;
+}
+
+.background-orange {
+  background-color: #fe980d;
+  color: #ffffff;
+}
